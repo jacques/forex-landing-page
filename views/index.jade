@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  h2 Send Money Home
+
+  p Send money home to your loved ones.
+
+  form
+    table
+      tr
+        th Where do you want to send money to?
+        td
+          select(name='target_currency')
+           option(value='BDT') Bangladesh
+           option(value='USD') Zimbabwe
